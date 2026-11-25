@@ -1,5 +1,7 @@
 
 ## Ex 01 -Simple Web Server using Spring Boot
+## NAME : HARIPRASATH R
+## REG NO: 212223040059
 
 ## AIM:
 To develop a Simple Web Server using Spring Boot that can handle basic HTTP requests and return appropriate responses through RESTful endpoints.
@@ -42,6 +44,7 @@ Stop the Spring Boot server once testing is complete.
 
 ## Program 
 
+```
 simple-web-server/
 ├── src/
 │   └── main/
@@ -53,7 +56,11 @@ simple-web-server/
 │           └── application.properties
 ├── pom.xml
 
- ### Pom.xml
+```
+
+### Pom.xml
+
+```html
 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -91,8 +98,11 @@ simple-web-server/
         </plugins>
     </build>
 </project>
+```
 
 ### DemoApplication.java
+
+```java
 
 package com.example.demo;
 
@@ -106,8 +116,12 @@ public class DemoApplication {
     }
 }
 
+```
 
 ### HelloController.java
+
+```java
+
 package com.example.demo;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -121,15 +135,22 @@ public class HelloController {
         return "Hello, Spring Boot!";
     }
 }
-
+```
 
 ### application.properties:
 
+```
+
  server.port=8081
+```
 
 
 
+### Output:
 
-Output:
+<img width="1917" height="1020" alt="image" src="https://github.com/user-attachments/assets/af42eddc-be05-4b38-8dda-1a12b84aaeb3" />
 
 
+### Result:
+
+Thus, the Simple Web Server was successfully developed using Spring Boot. The application was able to handle basic HTTP requests through RESTful endpoints and return appropriate responses for the requested URLs.
